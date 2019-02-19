@@ -1,0 +1,22 @@
+void __fastcall TForm4::check_on_corrective_resize_req()
+{
+if(block)
+  return;
+if(WindowState == wsNormal)
+  {
+
+//-----------------------------------------------------------------
+
+void __fastcall TForm4::Button3Click(TObject *Sender)
+{
+block = true;
+BorderStyle = bsNone;
+Panel1->Visible = false;
+Panel1->Height = 1;
+bitmap->Height = 144;
+bitmap->Width = 176;
+bitmap->Canvas->Rectangle(0,0,bitmap->Width,bitmap->Height);
+Height = 144;
+Width = 176;
+}
+//---------------------------------------------------------------------------

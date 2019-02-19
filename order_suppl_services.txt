@@ -1,0 +1,24 @@
+__fastcall TSplSrv::TSplSrv()
+{
+TSplSrvDescr* s = new TSplSrvDescr(MFSwSServ_CFU);
+if(s)
+  SplSrvList.insert(TSplSrvList::value_type("27",s));
+s = new TSplSrvDescr(MFSwSServ_CFB);
+if(s)
+  SplSrvList.insert(TSplSrvList::value_type("28",s));
+s = new TSplSrvDescr(MFSwSServ_CFNRY);
+if(s)
+  SplSrvList.insert(TSplSrvList::value_type("29",s));
+s = new TSplSrvDescr(MFSwSServ_ClearCF);
+if(s)
+  SplSrvList.insert(TSplSrvList::value_type("30",s));
+s = new TSplSrvDescr(MFSwSServ_ClearCFU);
+if(s)
+  SplSrvList.insert(TSplSrvList::value_type("37",s));
+s = new TSplSrvDescr(MFSwSServ_ClearCFB);
+if(s)
+  SplSrvList.insert(TSplSrvList::value_type("38",s));
+s = new TSplSrvDescr(MFSwSServ_ClearCFNRY);
+if(s)
+  SplSrvList.insert(TSplSrvList::value_type("39",s));
+}

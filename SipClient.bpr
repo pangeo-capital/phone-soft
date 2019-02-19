@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="SipClient.exe"/>
+    <OBJFILES value="SipClient.obj SipClient_Unit.obj Sip.obj Log.obj utils.obj 
+      SipSendThread.obj SipRecvThread.obj SipParsThread.obj BaseThread.obj 
+      SipUacThread.obj SipUasThread.obj StunClient.obj SipResendThread.obj 
+      LegTrn.obj SipUserAgent.obj Sound.obj MediaChannels.obj MediaSession.obj 
+      G711.obj CallIn_Unit.obj PlaySound.obj Unit_Video_Cap.obj Unit4.obj 
+      Video.obj Unit3.obj ContactMenu_Unit.obj AddContact_Unit.obj Test_Unit.obj 
+      About_Unit.obj transmit_file.obj SoundTool_Unit.obj RegistryPanel_Unit.obj 
+      digcalc.obj md5.obj ServConf_Unit.obj tls.obj tcp.obj SipTransport.obj 
+      Test_Sound.obj tunnel.obj IPP\G729\vadg729fp.obj IPP\G729\aux_fnxs.obj 
+      IPP\G729\aux_tbls.obj IPP\G729\decg729.obj IPP\G729\decg729fp.obj 
+      IPP\G729\decg7291.obj IPP\G729\encg729.obj IPP\G729\encg729fp.obj 
+      IPP\G729\encg7291.obj IPP\G729\owng729.obj IPP\G729\owng729fp.obj 
+      IPP\G729\owng7291.obj IPP\G729\tabg7291.obj IPP\G729\usc729fp.obj 
+      IPP\G729\uscg729i.obj IPP\G729\uscg7291.obj IPP\G729\utilfec.obj 
+      IPP\G729\utilg7291.obj IPP\G729\utilsid.obj IPP\G729\vadg729.obj 
+      StartOptions_Unit.obj DialPad_FORM.obj DialPad_Panel.obj RBitMap.obj 
+      CommentPanel.obj LastCallsFileThread_Unit.obj Unit_EnterpriseSubscList.obj 
+      Refer_Unit.obj ScreenSharing.obj ParallelPhone_Unit.obj 
+      Conference_Unit.obj rtcp.obj WebUnit.obj SosockThread.obj src\locker.obj 
+      src\win_utils.obj"/>
+    <RESFILES value="SipClient.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) SipClient_Unit.dfm CallIn_Unit.dfm Unit_Video_Cap.dfm 
+      Unit4.dfm Unit3.dfm ContactMenu_Unit.dfm AddContact_Unit.dfm Test_Unit.dfm 
+      About_Unit.dfm SoundTool_Unit.dfm RegistryPanel_Unit.dfm SipTransport.dfm 
+      Test_Sound.dfm StartOptions_Unit.dfm DialPad_FORM.dfm 
+      Unit_EnterpriseSubscList.dfm Refer_Unit.dfm ParallelPhone_Unit.dfm 
+      Conference_Unit.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="nmfast.lib vclx.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib vclx.lib nmfast.lib"/>
+    <PACKAGES value="rtl.bpi vcl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi vcldb.bpi adortl.bpi 
+      ibsmp.bpi bdertl.bpi vcldbx.bpi qrpt.bpi teeui.bpi teedb.bpi tee.bpi 
+      dss.bpi teeqr.bpi ibxpress.bpi dsnap.bpi vclie.bpi inetdb.bpi inet.bpi 
+      nmfast.bpi webdsnap.bpi bcbie.bpi dclocx.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;IPP\G729;src;src"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="SipClient.cpp"/>
+    <INCLUDEPATH value="src;..\AppProba;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;&quot;C:\Program Files (x86)\Borland\CBuilder5\Bin&quot;;DialPad;IPP\G729;&quot;C:\Program Files\Borland\CBuilder5\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY;..\Sip_Client_Pic\Справочник;pjmedia"/>
+    <LIBPATH value="src;lib;..\AppProba;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;$(BCB)\lib;$(BCB)\lib\obj;DialPad;IPP\G729"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-Isrc -I..\AppProba -I&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot; 
+      -I&quot;C:\Program Files (x86)\Borland\CBuilder5\Bin&quot; -IDialPad -IIPP\G729 
+      -I&quot;C:\Program Files\Borland\CBuilder5\Projects&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -Irsrtp\include -IDLL_SCREEN_DISPLAY 
+      -I..\Sip_Client_Pic\Справочник -Ipjmedia -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=c:\PROGRA~2\borland\CBUILD~2\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 
+      -6 -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="SipClient.cpp" FORMNAME="" UNITNAME="SipClient" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SipClient.res" FORMNAME="" UNITNAME="SipClient" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SipClient_Unit.cpp" FORMNAME="MainFormSLS" UNITNAME="SipClient_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Sip.cpp" FORMNAME="" UNITNAME="Sip" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Log.cpp" FORMNAME="" UNITNAME="Log" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="utils.cpp" FORMNAME="" UNITNAME="utils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SipSendThread.cpp" FORMNAME="" UNITNAME="SipSendThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SipRecvThread.cpp" FORMNAME="" UNITNAME="SipRecvThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SipParsThread.cpp" FORMNAME="" UNITNAME="SipParsThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BaseThread.cpp" FORMNAME="" UNITNAME="BaseThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SipUacThread.cpp" FORMNAME="" UNITNAME="SipUacThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SipUasThread.cpp" FORMNAME="" UNITNAME="SipUasThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="StunClient.cpp" FORMNAME="" UNITNAME="StunClient" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SipResendThread.cpp" FORMNAME="" UNITNAME="SipResendThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LegTrn.cpp" FORMNAME="" UNITNAME="LegTrn" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SipUserAgent.cpp" FORMNAME="" UNITNAME="SipUserAgent" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Sound.cpp" FORMNAME="" UNITNAME="Sound" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MediaChannels.cpp" FORMNAME="" UNITNAME="MediaChannels" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MediaSession.cpp" FORMNAME="" UNITNAME="MediaSession" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="G711.cpp" FORMNAME="" UNITNAME="G711" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CallIn_Unit.cpp" FORMNAME="Form1" UNITNAME="CallIn_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PlaySound.cpp" FORMNAME="" UNITNAME="PlaySound" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_Video_Cap.cpp" FORMNAME="Form2" UNITNAME="Unit_Video_Cap" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit4.cpp" FORMNAME="Form4" UNITNAME="Unit4" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Video.cpp" FORMNAME="" UNITNAME="Video" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit3.cpp" FORMNAME="Form3" UNITNAME="Unit3" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ContactMenu_Unit.cpp" FORMNAME="ContactMenu" UNITNAME="ContactMenu_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AddContact_Unit.cpp" FORMNAME="AddContact" UNITNAME="AddContact_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Test_Unit.cpp" FORMNAME="Test" UNITNAME="Test_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="About_Unit.cpp" FORMNAME="AboutWin" UNITNAME="About_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="transmit_file.cpp" FORMNAME="" UNITNAME="transmit_file" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SoundTool_Unit.cpp" FORMNAME="SoundTool" UNITNAME="SoundTool_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RegistryPanel_Unit.cpp" FORMNAME="RegistryPanel" UNITNAME="RegistryPanel_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="digcalc.cpp" FORMNAME="" UNITNAME="digcalc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="md5.cpp" FORMNAME="" UNITNAME="md5" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ServConf_Unit.cpp" FORMNAME="" UNITNAME="ServConf_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tls.cpp" FORMNAME="" UNITNAME="tls" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tcp.cpp" FORMNAME="" UNITNAME="tcp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SipTransport.cpp" FORMNAME="Transport" UNITNAME="SipTransport" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Test_Sound.cpp" FORMNAME="TTest_Sound" UNITNAME="Test_Sound" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tunnel.cpp" FORMNAME="" UNITNAME="tunnel" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\vadg729fp.c" FORMNAME="" UNITNAME="vadg729fp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\aux_fnxs.c" FORMNAME="" UNITNAME="aux_fnxs" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\aux_tbls.c" FORMNAME="" UNITNAME="aux_tbls" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\decg729.c" FORMNAME="" UNITNAME="decg729" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\decg729fp.c" FORMNAME="" UNITNAME="decg729fp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\decg7291.c" FORMNAME="" UNITNAME="decg7291" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\encg729.c" FORMNAME="" UNITNAME="encg729" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\encg729fp.c" FORMNAME="" UNITNAME="encg729fp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\encg7291.c" FORMNAME="" UNITNAME="encg7291" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\owng729.c" FORMNAME="" UNITNAME="owng729" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\owng729fp.c" FORMNAME="" UNITNAME="owng729fp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\owng7291.c" FORMNAME="" UNITNAME="owng7291" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\tabg7291.c" FORMNAME="" UNITNAME="tabg7291" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\usc729fp.c" FORMNAME="" UNITNAME="usc729fp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\uscg729i.c" FORMNAME="" UNITNAME="uscg729i" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\uscg7291.c" FORMNAME="" UNITNAME="uscg7291" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\utilfec.c" FORMNAME="" UNITNAME="utilfec" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\utilg7291.c" FORMNAME="" UNITNAME="utilg7291" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\utilsid.c" FORMNAME="" UNITNAME="utilsid" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPP\G729\vadg729.c" FORMNAME="" UNITNAME="vadg729" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="StartOptions_Unit.cpp" FORMNAME="StartOptionsWin" UNITNAME="StartOptions_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DialPad_FORM.cpp" FORMNAME="DialPad" UNITNAME="DialPad_FORM" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DialPad_Panel.cpp" FORMNAME="" UNITNAME="DialPad_Panel" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RBitMap.cpp" FORMNAME="" UNITNAME="RBitMap" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CommentPanel.cpp" FORMNAME="" UNITNAME="CommentPanel" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LastCallsFileThread_Unit.cpp" FORMNAME="" UNITNAME="LastCallsFileThread_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_EnterpriseSubscList.cpp" FORMNAME="EnterpriseSubscList" UNITNAME="Unit_EnterpriseSubscList" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Refer_Unit.cpp" FORMNAME="ReferWin" UNITNAME="Refer_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ScreenSharing.cpp" FORMNAME="" UNITNAME="ScreenSharing" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ParallelPhone_Unit.cpp" FORMNAME="ParallelPhone" UNITNAME="ParallelPhone_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Conference_Unit.cpp" FORMNAME="ConferenceWin" UNITNAME="Conference_Unit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="rtcp.cpp" FORMNAME="" UNITNAME="rtcp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WebUnit.cpp" FORMNAME="" UNITNAME="WebUnit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SosockThread.cpp" FORMNAME="" UNITNAME="SosockThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="src\locker.cpp" FORMNAME="" UNITNAME="locker" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="src\win_utils.cpp" FORMNAME="" UNITNAME="win_utils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1049
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=30
+Item0=src;..\AppProba;C:\Program Files (x86)\Borland\CBuilder6\Projects;C:\Program Files (x86)\Borland\CBuilder5\Bin;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY;..\Sip_Client_Pic\Справочник;pjmedia
+Item1=C:\Program Files (x86)\Borland\CBuilder5\Bin;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY;..\Sip_Client_Pic\Справочник;pjmedia
+Item2=C:\Program Files (x86)\Borland\CBuilder5\Bin\;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY;..\Sip_Client_Pic\Справочник;pjmedia
+Item3=$(BCB)\include\vcl;$(BCB)\include;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;Open_SSL_110C
+Item4=$(BCB)\include\vcl;$(BCB)\include;Open_SSL_110C\crypto\include;Open_SSL_110C\crypto\bio;Open_SSL_110C\crypto\lhash;Open_SSL_110C\crypto\stack;Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;Open_SSL_110C
+Item5=Open_SSL_110C\crypto\ts;Open_SSL_110C\crypto\dso;Open_SSL_110C\crypto\rand;Open_SSL_110C\crypto\pkcs12;Open_SSL_110C\crypto\x509v3;Open_SSL_110C\crypto\pkcs7;Open_SSL_110C\crypto\ec;Open_SSL_110C\crypto\comp;Open_SSL_110C\crypto\asn1;Open_SSL_110C\crypto\x509;Open_SSL_110C\crypto\dsa;Open_SSL_110C\crypto\pem;Open_SSL_110C\crypto\objects;Open_SSL_110C\crypto\buffer;Open_SSL_110C\crypto\evp;Open_SSL_110C\crypto\dh;Open_SSL_110C\crypto\rsa;Open_SSL_110C\crypto\bn;Open_SSL_110C\crypto\err;Open_SSL_110C\crypto;$(BCB)\include\vcl;$(BCB)\include;Open_SSL_110C\crypto\include;Open_SSL_110C\crypto\bio;Open_SSL_110C\crypto\lhash;Open_SSL_110C\crypto\stack;Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;Open_SSL_110C
+Item6=Open_SSL_110C\crypto\ui;Open_SSL_110C\crypto\ocsp;Open_SSL_110C\crypto\engine;Open_SSL_110C\crypto\ts;Open_SSL_110C\crypto\dso;Open_SSL_110C\crypto\rand;Open_SSL_110C\crypto\pkcs12;Open_SSL_110C\crypto\x509v3;Open_SSL_110C\crypto\pkcs7;Open_SSL_110C\crypto\ec;Open_SSL_110C\crypto\comp;Open_SSL_110C\crypto\asn1;Open_SSL_110C\crypto\x509;Open_SSL_110C\crypto\dsa;Open_SSL_110C\crypto\pem;Open_SSL_110C\crypto\objects;Open_SSL_110C\crypto\buffer;Open_SSL_110C\crypto\evp;Open_SSL_110C\crypto\dh;Open_SSL_110C\crypto\rsa;Open_SSL_110C\crypto\bn;Open_SSL_110C\crypto\err;Open_SSL_110C\crypto;$(BCB)\include\vcl;$(BCB)\include;Open_SSL_110C\crypto\include;Open_SSL_110C\crypto\bio;Open_SSL_110C\crypto\lhash;Open_SSL_110C\crypto\stack;Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;Open_SSL_110C
+Item7=Open_SSL_110C\crypto\ocsp;Open_SSL_110C\crypto\engine;Open_SSL_110C\crypto\ts;Open_SSL_110C\crypto\dso;Open_SSL_110C\crypto\rand;Open_SSL_110C\crypto\pkcs12;Open_SSL_110C\crypto\x509v3;Open_SSL_110C\crypto\pkcs7;Open_SSL_110C\crypto\ec;Open_SSL_110C\crypto\comp;Open_SSL_110C\crypto\asn1;Open_SSL_110C\crypto\x509;Open_SSL_110C\crypto\dsa;Open_SSL_110C\crypto\pem;Open_SSL_110C\crypto\objects;Open_SSL_110C\crypto\buffer;Open_SSL_110C\crypto\evp;Open_SSL_110C\crypto\dh;Open_SSL_110C\crypto\rsa;Open_SSL_110C\crypto\bn;Open_SSL_110C\crypto\err;Open_SSL_110C\crypto;$(BCB)\include\vcl;$(BCB)\include;Open_SSL_110C\crypto\include;Open_SSL_110C\crypto\bio;Open_SSL_110C\crypto\lhash;Open_SSL_110C\crypto\stack;Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;Open_SSL_110C
+Item8=Open_SSL_110C\crypto\bn;Open_SSL_110C\crypto\err;Open_SSL_110C\crypto;$(BCB)\include\vcl;$(BCB)\include;Open_SSL_110C\crypto\include;Open_SSL_110C\crypto\bio;Open_SSL_110C\crypto\lhash;Open_SSL_110C\crypto\stack;Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;Open_SSL_110C
+Item9=Open_SSL_110C\crypto\bn;Open_SSL_110C\crypto\err;Open_SSL_110C\crypto;$(BCB)\include\vcl;$(BCB)\include;Open_SSL_110C\crypto\bio;Open_SSL_110C\crypto\lhash;Open_SSL_110C\crypto\stack;Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;Open_SSL_110C;Open_SSL_110C\crypto\include
+Item10=$(BCB)\include\vcl;$(BCB)\include;Open_SSL_110C\crypto\bio;Open_SSL_110C\crypto\lhash;Open_SSL_110C\crypto\stack;Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;Open_SSL_110C;Open_SSL_110C\crypto\include
+Item11=Open_SSL_110C\crypto\bio;Open_SSL_110C\crypto\lhash;Open_SSL_110C\crypto\stack;Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\include\vcl;$(BCB)\include;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;Open_SSL_110C;Open_SSL_110C\crypto\include
+Item12=Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\include\vcl;$(BCB)\include;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;Open_SSL_110C;C:\asst\Prog_Sip_Client\Open_SSL_110C\crypto\include
+Item13=Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\include\vcl;$(BCB)\include;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;Open_SSL_110C
+Item14=Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\include\vcl;$(BCB)\include;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;Open_SSL_110C
+Item15=Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\include\vcl;$(BCB)\include;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;Open_SSL_110C
+Item16=Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\include\vcl;$(BCB)\include;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;C:\asst\Prog_Sip_Client\Open_SSL_110C
+Item17=Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\include\vcl;$(BCB)\include;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj
+Item18=Open_SSL_110C\ssl;$(BCB)\include\vcl;$(BCB)\include;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj
+Item19=$(BCB)\include\vcl;$(BCB)\include;DialPad;IPP\G729;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj
+Item20=DialPad;IPP\G729;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj
+Item21=DialPad;IPP\G729;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;C:\Program Files (x86)\Borland\CBuilder5\Bin\
+Item22=openssl-1.1.0c\ssl;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY;pjmedia;pj;openssl-1.1.0c\ssl\statem;C:\Program Files (x86)\Borland\CBuilder5\Bin\;openssl-1.1.0c\ssl\record
+Item23=openssl-1.1.0c\ssl;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY;..\Sip_Client_Pic\Справочник;pjmedia;pj;openssl-1.1.0c\ssl\statem;C:\Program Files (x86)\Borland\CBuilder5\Bin\;openssl-1.1.0c\ssl\record
+Item24=DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY;..\Sip_Client_Pic\Справочник;pjmedia;pj;C:\asst\Prog_Sip_Client\openssl-1.1.0c\ssl\statem;C:\Program Files (x86)\Borland\CBuilder5\Bin\;C:\asst\Prog_Sip_Client\openssl-1.1.0c\ssl\record
+Item25=C:\Program Files (x86)\Borland\CBuilder5\Bin\;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY;..\Sip_Client_Pic\Справочник;pjmedia;pj
+Item26=C:\Program Files (x86)\Borland\CBuilder5\Bin\;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY;..\Sip_Client_Pic\Справочник;pjmedia;C:\asst\Sip_Client\pj
+Item27=C:\Program Files (x86)\Borland\CBuilder5\Bin\;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY;..\Sip_Client_Pic\Справочник;C:\asst\Sip_Client\pjmedia
+Item28=..\Sip_Client_Pic\Справочник;C:\Program Files (x86)\Borland\CBuilder5\Bin\;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY
+Item29=C:\Program Files (x86)\Borland\CBuilder5\Bin\;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rsrtp\include;DLL_SCREEN_DISPLAY
+
+[HistoryLists\hlLibraryPath]
+Count=21
+Item0=src;lib;..\AppProba;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\lib;$(BCB)\lib\obj;DialPad;IPP\G729
+Item1=lib;..\AppProba;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\lib;$(BCB)\lib\obj;DialPad;IPP\G729
+Item2=src;..\AppProba;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\lib;$(BCB)\lib\obj;DialPad;IPP\G729
+Item3=$(BCB)\lib;$(BCB)\lib\obj;DialPad;IPP\G729
+Item4=Open_SSL_110C\crypto\ui;Open_SSL_110C\crypto\ocsp;Open_SSL_110C\crypto\engine;Open_SSL_110C\crypto\ts;Open_SSL_110C\crypto\dso;Open_SSL_110C\crypto\rand;Open_SSL_110C\crypto\pkcs12;Open_SSL_110C\crypto\x509v3;Open_SSL_110C\crypto\pkcs7;Open_SSL_110C\crypto\ec;Open_SSL_110C\crypto\comp;Open_SSL_110C\crypto\asn1;Open_SSL_110C\crypto\x509;Open_SSL_110C\crypto\dsa;Open_SSL_110C\crypto\pem;Open_SSL_110C\crypto\objects;Open_SSL_110C\crypto\buffer;Open_SSL_110C\crypto\evp;Open_SSL_110C\crypto\dh;Open_SSL_110C\crypto\rsa;Open_SSL_110C\crypto\bn;Open_SSL_110C\crypto\err;Open_SSL_110C\crypto;Open_SSL_110C\crypto\bio;Open_SSL_110C\crypto\lhash;Open_SSL_110C\crypto\stack;Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\lib;$(BCB)\lib\obj;DialPad;IPP\G729
+Item5=Open_SSL_110C\crypto\ocsp;Open_SSL_110C\crypto\engine;Open_SSL_110C\crypto\ts;Open_SSL_110C\crypto\dso;Open_SSL_110C\crypto\rand;Open_SSL_110C\crypto\pkcs12;Open_SSL_110C\crypto\x509v3;Open_SSL_110C\crypto\pkcs7;Open_SSL_110C\crypto\ec;Open_SSL_110C\crypto\comp;Open_SSL_110C\crypto\asn1;Open_SSL_110C\crypto\x509;Open_SSL_110C\crypto\dsa;Open_SSL_110C\crypto\pem;Open_SSL_110C\crypto\objects;Open_SSL_110C\crypto\buffer;Open_SSL_110C\crypto\evp;Open_SSL_110C\crypto\dh;Open_SSL_110C\crypto\rsa;Open_SSL_110C\crypto\bn;Open_SSL_110C\crypto\err;Open_SSL_110C\crypto;Open_SSL_110C\crypto\bio;Open_SSL_110C\crypto\lhash;Open_SSL_110C\crypto\stack;Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\lib;$(BCB)\lib\obj;DialPad;IPP\G729
+Item6=Open_SSL_110C\crypto\bn;Open_SSL_110C\crypto\err;Open_SSL_110C\crypto;Open_SSL_110C\crypto\bio;Open_SSL_110C\crypto\lhash;Open_SSL_110C\crypto\stack;Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\lib;$(BCB)\lib\obj;DialPad;IPP\G729
+Item7=Open_SSL_110C\crypto\bio;Open_SSL_110C\crypto\lhash;Open_SSL_110C\crypto\stack;Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\lib;$(BCB)\lib\obj;DialPad;IPP\G729
+Item8=Open_SSL_110C\crypto\conf;Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\lib;$(BCB)\lib\obj;DialPad;IPP\G729
+Item9=Open_SSL_110C\ssl\record;Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\lib;$(BCB)\lib\obj;DialPad;IPP\G729
+Item10=Open_SSL_110C\ssl\statem;Open_SSL_110C\ssl;$(BCB)\lib;$(BCB)\lib\obj;DialPad;IPP\G729
+Item11=Open_SSL_110C\ssl;$(BCB)\lib;$(BCB)\lib\obj;DialPad;IPP\G729
+Item12=$(BCB)\lib;DialPad;IPP\G729;$(BCB)\lib\obj
+Item13=DialPad;IPP\G729;$(BCB)\lib\obj;$(BCB)\lib
+Item14=C:\Program Files (x86)\Borland\CBuilder5\Bin\;DialPad;IPP\G729;$(BCB)\lib\obj;$(BCB)\lib
+Item15=C:\Program Files (x86)\Borland\CBuilder5\Bin\;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\lib\obj;$(BCB)\lib
+Item16=openssl-1.1.0c\ssl\statem;openssl-1.1.0c\ssl;..\Sip_Client_Pic\Справочник;C:\Program Files (x86)\Borland\CBuilder5\Bin\;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\lib\obj;$(BCB)\lib
+Item17=..\Sip_Client_Pic\Справочник;C:\Program Files (x86)\Borland\CBuilder5\Bin\;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\lib\obj;$(BCB)\lib
+Item18=C:\Program Files (x86)\Borland\CBuilder5\Bin;DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\lib\obj;$(BCB)\lib
+Item19=DialPad;IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\lib\obj;$(BCB)\lib
+Item20=IPP\G729;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
